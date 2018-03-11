@@ -5,12 +5,13 @@
 <div class="login-box">
   <div class="login-logo">
     <a class="navbar-brand" href="{{ url('/') }}">
-      <i class="fas fa-lightbulb "></i> <b> {{ config('app.name', 'Laravel') }} </b>
+      <i class="fas fa-lightbulb "></i> <b> {{ config('app.name', 'Laravel') }} </b><br>
+      <small>Login</small>
     </a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Faça login para iniciar sua sessão</p>
+    <p class="login-box-msg">Faça login para iniciar sua sessão</p><br>
 
     <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -33,7 +34,6 @@
                 </span>
             @endif
         </div>
-
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">

@@ -49,8 +49,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </h1>
             <!-- You can dynamically generate breadcrumbs here -->
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Level</a></li>
-                <li class="active">Here</li>
+              @for( $i = 0; $i < count($breadcrumbs); $i++)
+                  @if ($i ==  (count($breadcrumbs)-1))
+                    <li class="active">
+                  @else
+                    <li>
+                  @endif
+
+                    <a  href="#">
+                      @if ($i==0)
+                        <i class="fas fa-tachometer-alt"></i>
+                      @else
+                        {{ $breadcrumbs[$i] }}
+                      @endif
+                    </a>
+                  </li>
+              @endfor
             </ol>
         </section>
 
