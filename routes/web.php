@@ -11,16 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/laravel', function () {
+    return view('laravel');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('admin', function () {
-    return view('admin_template');
-});
-
-Route::get('test', 'TestController@index');
+Route::get('/home', 'HomeController@index');
