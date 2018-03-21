@@ -1,6 +1,61 @@
 @extends('layouts.admin_template')
 
 @section('content')
+<div class="row">
+  <div class="col-xs-12">
+    <h4>Economia Total</h4>
+    <span>Selecione a Regional
+    <select id='selectRegional' class="form-control">
+      <option> TODAS AS REGIONAIS </option>
+    </select></sapn><br>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- DONUT CHART -->
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 id='chartTitle' class="box-title">Economia Total Por Tipo: R$ </h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <canvas id="pieChart" style="height:250px"></canvas>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col (LEFT) -->
+      <div class="col-md-6">
+        <!-- DONUT CHART -->
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 id='chart2Title' class="box-title">Economia Total por Regional </h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <canvas id="pieChart2" style="height:250px"></canvas>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col (RIGHT) -->
+    </div>
+    <!-- /.row -->
+</div>
+
+  </div>
     <div class='row'>
         <div class='col-md-6'>
             <!-- Box -->

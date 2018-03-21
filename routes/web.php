@@ -20,7 +20,10 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/contratos', 'HomeController@contratos');
+Route::get('/faturas', 'HomeController@faturas');
+Route::get('/avaliacao_reativo', 'HomeController@avaliacao_reativo');
+Route::get('/ultrapassagem_demanda', 'HomeController@ultrapassagem_demanda');
+Route::get('/reducao_demanda', 'HomeController@reducao_demanda');
+Route::get('/analise_tarifaria', 'HomeController@analise_tarifaria');
+Route::get('/tarifa_minima', 'HomeController@tarifa_minima');
