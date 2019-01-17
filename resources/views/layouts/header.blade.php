@@ -127,11 +127,11 @@
                         <li class="user-footer">
                             <div class="pull-left">
                               @if(Auth::user()->type == 'Admin')
-                              <a class="btn btn-default btn-flat" href="{{ route('register') }}">{{ __('Novo Usuário') }}</a>
+                              <a class="btn btn-info btn-flat" href="{{ route('register') }}">{{ __('Novo Usuário') }}</a>
                               @endif
                             </div>
                             <div class="pull-right">
-                                <a class="btn btn-default btn-flat" href="{{ route('logout') }}"
+                                <a class="btn btn-info btn-flat" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}

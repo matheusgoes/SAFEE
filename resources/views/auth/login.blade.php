@@ -5,7 +5,7 @@
 <div class="login-box">
   <div class="login-logo">
     <a class="navbar-brand" href="{{ url('/') }}">
-      <i class="fas fa-lightbulb "></i> <b> {{ config('app.name', 'Laravel') }} </b><br>
+      <i class="fas fa-lightbulb "></i> <b> SAFEE </b><br>
       <small>Login</small>
     </a>
   </div>
